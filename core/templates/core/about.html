@@ -5,6 +5,46 @@ About Us - My Smart Business Site
 {% endblock %}
 
 {% block content %}
-    <h1>About Us</h1>
-    <p>Welcome to our smart business site. We are dedicated to providing innovative solutions for your business needs.</p>
+<section class="bg-gray-50 py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-4xl font-bold mb-4">
+      About Me
+    </h1>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      I am a full-stack developer specializing in websites and automation. I help businesses save time and grow online.
+    </p>
+  </div>
+</section>
+
+<!-- STORY / SKILLS -->
+<section class="py-20">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Text -->
+    <div>
+      <h2 class="text-3xl font-bold mb-4">My Story</h2>
+      <p class="text-gray-600 mb-4">
+        I started as a passionate developer and quickly realized I could help businesses automate their workflows and have better websites.
+      </p>
+      <p class="text-gray-600">
+        With experience in React, Django, Next.js, Node.js, and automation tools, I deliver fast, secure, and scalable solutions.
+      </p>
+    </div>
+
+    <!-- Skills / Image placeholder -->
+    <div class="bg-gray-100 h-64 flex items-center justify-center rounded-lg">
+      <span class="text-gray-400">Your Image / Logo</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-gray-50 py-20 text-center">
+  <h2 class="text-3xl font-bold mb-4">Want to work together?</h2>
+  <p class="text-gray-600 mb-8">Let’s create something useful for your business.</p>
+  <a href="{% url 'contact' %}" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+    Contact Me
+  </a>
+</section>
 {% endblock %}

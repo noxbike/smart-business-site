@@ -5,12 +5,103 @@ Our Services - My Smart Business Site
 {% endblock %}
 
 {% block content %}
-    <h1>Our Services</h1>
-    <ul>
-        <li>Business Consulting</li>
-        <li>Market Analysis</li>
-        <li>Project Management</li>
-        <li>IT Solutions</li>
-    </ul>
-    <p>Contact us to learn more about how we can help your business grow.</p>
+<!-- SERVICES Améliorés -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">My Services</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      I help businesses grow online with modern websites, automation, and backend solutions.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+    <!-- Service 1 -->
+    <div class="bg-white border rounded-xl p-8 shadow-lg hover:shadow-2xl transition duration-300">
+      <div class="text-blue-600 text-4xl mb-4">💻</div>
+      <h3 class="text-2xl font-semibold mb-3">Website Development</h3>
+      <p class="text-gray-600 mb-4">Fast, responsive, and modern websites tailored to your business.</p>
+      <ul class="text-gray-500 space-y-2">
+        <li>• Landing pages & corporate sites</li>
+        <li>• Responsive & mobile-first</li>
+        <li>• SEO optimized</li>
+      </ul>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="bg-white border rounded-xl p-8 shadow-lg hover:shadow-2xl transition duration-300">
+      <div class="text-green-500 text-4xl mb-4">⚙️</div>
+      <h3 class="text-2xl font-semibold mb-3">Automation & Forms</h3>
+      <p class="text-gray-600 mb-4">Automate repetitive tasks and capture leads efficiently.</p>
+      <ul class="text-gray-500 space-y-2">
+        <li>• Contact forms & email notifications</li>
+        <li>• Lead management</li>
+        <li>• Workflow automation</li>
+      </ul>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="bg-white border rounded-xl p-8 shadow-lg hover:shadow-2xl transition duration-300">
+      <div class="text-purple-600 text-4xl mb-4">🛠️</div>
+      <h3 class="text-2xl font-semibold mb-3">Backend & API</h3>
+      <p class="text-gray-600 mb-4">Secure, scalable, and maintainable backend solutions.</p>
+      <ul class="text-gray-500 space-y-2">
+        <li>• Django / FastAPI</li>
+        <li>• REST / GraphQL APIs</li>
+        <li>• Docker & CI/CD pipelines</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<!-- PROCESS / HOW IT WORKS -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">How It Works</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Simple 3-step process to get your website and automation running quickly.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-left">
+
+    <!-- Step 1 -->
+    <div class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition duration-300">
+      <div class="text-blue-600 text-4xl mb-4">🗣️</div>
+      <h3 class="text-2xl font-semibold mb-2">1. Discuss</h3>
+      <p class="text-gray-600">We talk about your business needs and goals to create a clear plan.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition duration-300">
+      <div class="text-green-500 text-4xl mb-4">⚡</div>
+      <h3 class="text-2xl font-semibold mb-2">2. Build</h3>
+      <p class="text-gray-600">I develop your website and automation quickly and efficiently.</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition duration-300">
+      <div class="text-purple-600 text-4xl mb-4">🚀</div>
+      <h3 class="text-2xl font-semibold mb-2">3. Deliver</h3>
+      <p class="text-gray-600">You get a ready-to-use solution that grows your business.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">
+      Ready to start?
+    </h2>
+    <p class="text-gray-600 mb-8">
+      Let’s build something useful together.
+    </p>
+    <a href="{% url 'contact' %}"
+       class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+      Contact me
+    </a>
+  </div>
+</section>
 {% endblock %}
