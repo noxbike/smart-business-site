@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact Us - {{ SITE_NAME }}
+{% endblock %}
+
+{% block content %}
+   <!-- HERO -->
+<section class="bg-gray-50 py-20 text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+    <p class="text-gray-600 mb-8">{{ SITE_CONTACT }}</p>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="py-20">
+  <div class="max-w-3xl mx-auto px-6">
+    <form method="POST" class="bg-white p-8 shadow-lg rounded-lg space-y-6">
+        {% csrf_token %}
+
+      <div>
+        <label for="name" class="block text-gray-700 mb-2">Name</label>
+        {{ form.name }}
+      </div>
+
+      <div>
+        <label for="email" class="block text-gray-700 mb-2">Email</label>
+        {{ form.email }}
+      </div>
+
+      <div>
+        <label for="message" class="block text-gray-700 mb-2">Message</label>
+        {{ form.message }}
+      </div>
+
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        Send Message
+      </button>
+
+    </form>
+  </div>
+</section>
+
+{% endblock %}
